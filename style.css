@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    display: grid;
+    grid-template-areas: "n m m m m m m m m m m m";
+}
+
+input[type="text"] {
+    width: 13rem;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #f4f5f7;;
+    padding: 10px 15px 10px 15px;
+    margin-top: 3rem ;
+    margin-left: 5.5rem;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type="text"]:focus {
+    width: 14rem;
+}
+
+span.material-icons {
+    position: relative;
+    left: -30px;
+    top: 6px;
+}
+
+.left-nav {
+    grid-area: n;
+    background-color: #f4f5f7;
+    height: 100vh;
+    min-width: 13rem;
+}
+
+.left-nav h2 {
+    padding: 0.4rem;
+    margin-top: 2rem;
+}
+.main-section {
+    grid-area: m;
+}
+
+ul {
+    list-style: none;
+    margin-top: 1rem;
+    padding: 0;
+}
+ul > li {
+    padding: 1rem;
+    font-size: 1.3rem;
+    padding-left: 2rem;
+}
+
+li.selected {
+    color: #0052cc;
+    background-color: rgb(235, 236, 240);
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    border-radius: 1rem;
+    padding: 1px 50px 0;
+    margin: 2rem 2rem;
+}
+.grid-items {
+    background-color: #f4f5f7;
+    padding: 0.5rem;
+}
+
+.draggable {
+    border-radius: 0.2rem;
+    padding: 1rem;
+    background-color: white;
+    cursor: move;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.draggable.dragging {
+    opacity: 0.5;
+}
+
+.draggable .footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    background-color: cyan;
+    border: 1px solid cyan ;
+    border-radius: .1rem;
+    padding: .1rem .9rem;
+}
+
+.right{
+    background-color: rebeccapurple;
+    border: 1px solid rebeccapurple ;
+    border-radius: .1rem;
+    padding: .1rem .9rem;
+    color: white;
+}
+
+.grid-items:nth-child(1),
+.grid-items:nth-child(2),
+.grid-items:nth-child(3),
+.grid-items:nth-child(4) {
+    padding: 0.8rem;
+    padding-left: 1.2rem;
+}
